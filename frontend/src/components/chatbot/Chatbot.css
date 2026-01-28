@@ -1,0 +1,170 @@
+.chat-card {
+  
+  background: var(--card-bg);
+  max-width: 720px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 22px;
+  box-shadow: 0 25px 55px rgba(145, 175, 244, 0.35);
+}
+
+.chat-window {
+  color: var(--chat-text);
+  height: 300px;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--input-bg);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 0.6rem;
+  padding: 10px 14px;
+  border-radius: 14px;
+  max-width: 80%;
+}
+
+.msg.bot {
+  background: #e6d8f5;
+  white-space: pre-line;
+}
+
+.msg.user {
+  background: #dbe6ff;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d3d8f5;
+}
+
+.chat-input button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #5a6fdc;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;          /* 👈 finger pointer */
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.chat-input button:hover {
+  background: #4b5fc7;
+  transform: translateY(-1px);
+}
+
+.chat-input button:active {
+  transform: translateY(0);
+}
+
+
+.chat-input button {
+  cursor: pointer;   /* 👈 THIS is the key */
+}
+
+.typing {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* =========================
+   QUICK REPLIES
+   ========================= */
+
+.quick-replies {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.quick-replies button {
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid #5a6fdc;
+  background: transparent;
+  color: #5a6fdc;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.quick-replies button:hover {
+  background: #5a6fdc;
+  color: white;
+}
+
+body.dark-mode .quick-replies button {
+  border-color: #91aff4;
+  color: #91aff4;
+}
+
+body.dark-mode .quick-replies button:hover {
+  background: #91aff4;
+  color: #1f2235;
+}
+
+/* =========================
+   RESET BUTTON
+   ========================= */
+
+.reset-btn {
+  margin: 0.5rem 0 1rem;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid #5a6fdc;
+  background: transparent;
+  color: #5a6fdc;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.reset-btn:hover {
+  background: #5a6fdc;
+  color: #ffffff;
+}
+
+body.dark-mode .reset-btn {
+  border-color: #91aff4;
+  color: #91aff4;
+}
+
+body.dark-mode .reset-btn:hover {
+  background: #91aff4;
+  color: #1f2235;
+}
+
+/* =========================
+   TYPING DOTS ANIMATION
+   ========================= */
+
+.dots::after {
+  content: "";
+  animation: dots 1.4s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}

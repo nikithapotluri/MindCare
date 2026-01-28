@@ -1,0 +1,16 @@
+.about-card {
+  background: white;
+  max-width: 720px;
+  padding: 2.5rem;
+  border-radius: 22px;
+  box-shadow: 0 25px 55px rgba(145, 175, 244, 0.35);
+}
+
+.about-card h2 {
+  color: #2e335f;
+}
+
+.about-card p {
+  margin-top: 1rem;
+  color: #5a5f8f;
+}

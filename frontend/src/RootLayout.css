@@ -1,0 +1,40 @@
+.root-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Normal pages */
+.with-sidebar {
+  margin-left: 220px; /* sidebar width */
+}
+
+/* Home page override */
+.home-layout {
+  flex-direction: column;
+}
+
+.home-layout .right-panel {
+  width: 100%;
+}
+
+.home-layout .content {
+  margin-left: 0;
+}
+
+/* Right side */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .root-layout {
+    flex-direction: column;
+  }
+
+  .with-sidebar {
+    margin-left: 0;
+  }
+}

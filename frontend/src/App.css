@@ -1,0 +1,202 @@
+/*Global Styles and Dark Mode Styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   THEME VARIABLES
+   ========================= */
+
+:root {
+  --card-bg: #ffffff;
+  --input-bg: #f7f8ff;
+  --text-color: #2e335f;
+  --chat-text: #2e335f;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --card-bg: #2a2d45;
+  --input-bg: #1e2033;
+  --text-color: #ffffff;
+  --chat-text: #2e335f;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: #f5f6ff;
+  color: #2e335f;
+}
+
+/* =========================
+   PAGE WRAPPER
+   Used by Home, Predictor, Chatbot, About
+   ========================= */
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #d5d9ed 0%,
+    #c1c9ef 40%,
+    #91aff4 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+/* =========================
+   COMMON CONTAINER
+   ========================= */
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+   LINKS RESET
+   ========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   BUTTON RESET (BASE)
+   ========================= */
+
+button {
+  font-family: inherit;
+}
+
+/* =========================
+   SCROLLBAR (OPTIONAL AESTHETIC)
+   ========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 111, 220, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* =========================
+   DARK MODE (GLOBAL)
+   ========================= */
+
+body.dark-mode {
+  background: #1f2235;
+  color: #f1f1f1;
+}
+
+body.dark-mode .page {
+  background: linear-gradient(135deg, #1f2235, #2c2f4a);
+}
+
+body.dark-mode .card,
+body.dark-mode .home-card,
+body.dark-mode .chat-card,
+body.dark-mode .about-card {
+  background: #2a2d45;
+  color: #ffffff;
+}
+
+body.dark-mode .about-card h2 ,
+body.dark-mode .about-card p
+{
+  color: #ffffff;
+}
+
+/* =========================
+   FIX INPUT STYLING IN DARK MODE
+   ========================= */
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #1e2033 !important;
+  color: #ffffff !important;
+  border: 1px solid #3a3f6b !important;
+}
+
+/* Remove bright focus glow */
+body.dark-mode input:focus,
+body.dark-mode select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(145, 175, 244, 0.35);
+  border-color: #91aff4;
+}
+
+/* Chrome, Edge, Safari */
+body.dark-mode input[type="number"]::-webkit-inner-spin-button,
+body.dark-mode input[type="number"]::-webkit-outer-spin-button {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+/* Firefox */
+body.dark-mode input[type="number"] {
+  appearance: textfield;
+}
+
+
+
+body.dark-mode label{
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar {
+  background: linear-gradient(180deg, #2a2d45, #1f2235);
+}
+
+body.dark-mode .sidebar-title {
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar-nav a {
+  color: #dcdcff;
+}
+
+body.dark-mode .sidebar-nav a.active {
+  background: #3a3f6b;
+  color: #ffffff;
+}
+
+body.dark-mode .footer {
+  color: #cfcfe8;
+}
+
+/* =========================
+   DARK MODE OVERRIDES
+   ========================= */
+
+body.dark-mode .home-card {
+  background: #2a2d45;
+  color: #eaeaf2;
+}
+
+body.dark-mode .home-card h1 {
+  color: #ffffff;
+}
+
+body.dark-mode .home-card p {
+  color: #cfcfe8;
+}
+
+body.dark-mode .home-card strong {
+  color: #91aff4;
+}
