@@ -11,7 +11,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
       <nav className="sidebar-nav">
         <NavLink to="/predict">Prediction</NavLink>
-        <NavLink to="/chatbot">Chatbot</NavLink>
+        {/* <NavLink to="/chatbot">Chatbot</NavLink> */}
         <NavLink to="/about">About</NavLink>
         {/* 🌙 Dark Mode Toggle */}
         

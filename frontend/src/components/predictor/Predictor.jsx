@@ -137,7 +137,7 @@ export default function Predictor() {
             </div>
 
             {/* ===== UI-ONLY CONTEXTUAL INPUTS ===== */}
-            
+        
 
             <div className="form-group">
               <label>Screen Time Before Bed</label>
@@ -185,6 +185,11 @@ export default function Predictor() {
                 <option>Irregular</option>
               </select>
             </div>
+
+
+        
+
+
 
             <button className="predict-btn" disabled={loading}>
               {loading ? "Predicting..." : "Predict"}

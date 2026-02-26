@@ -26,9 +26,14 @@ export default function Home() {
             <button>Start Assessment</button>
           </Link>
 
+
+          {/*
           <Link to="/chatbot">
             <button className="secondary">Talk to Chatbot</button>
           </Link>
+          */}
+
+          
         </div>
       </div>
     </div>
