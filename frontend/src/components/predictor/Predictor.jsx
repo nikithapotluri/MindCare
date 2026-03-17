@@ -97,7 +97,14 @@ export default function Predictor() {
             </div>
 
             <div className="form-group">
-              <label>PHQ Score</label>
+              <label class="label-with-info">
+                    PHQ Score
+                    <span class="info-icon">i
+                      <span class="tooltip-text">
+                        PHQ-9 score measures depression severity using a 9 question survey in range (0-27).
+                      </span>
+                    </span>
+              </label>
               <input
                 type="number"
                 value={phq}
@@ -107,7 +114,14 @@ export default function Predictor() {
             </div>
 
             <div className="form-group">
-              <label>GAD Score</label>
+              <label class="label-with-info">
+                    GAD Score
+                    <span class="info-icon">i
+                      <span class="tooltip-text">
+                        GAD-7 score measures anxiety severity based on 7 question survey in range (0-21).
+                      </span>
+                    </span>
+              </label>
               <input
                 type="number"
                 value={gad}
@@ -117,7 +131,14 @@ export default function Predictor() {
             </div>
 
             <div className="form-group">
-              <label>BMI</label>
+              <label class="label-with-info">
+                  BMI
+                  <span class="info-icon">i
+                    <span class="tooltip-text">
+                      Weight (kg) / (Height (m))²
+                    </span>
+                  </span>
+              </label>
               <input
                 type="number"
                 value={bmi}
@@ -127,7 +148,14 @@ export default function Predictor() {
             </div>
 
             <div className="form-group">
-              <label>Epworth Score</label>
+              <label class="label-with-info">
+                  Epworth Score
+                  <span class="info-icon">i
+                    <span class="tooltip-text">
+                      ESS measures daytime sleepiness based on an 8-question survey in range (0–24).
+                    </span>
+                  </span>
+              </label>
               <input
                 type="number"
                 value={epw}

@@ -125,6 +125,51 @@ body {
   cursor: not-allowed;
 }
 
+/* Info icon */
+.label-with-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #5a6fdc;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+/* Tooltip */
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  background: #2e335f;
+  color: #fff;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 26px;
+  left: -20px;
+  font-size: 12px;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.info-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Error */
 .error {
   margin-top: 1rem;
