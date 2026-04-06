@@ -11,11 +11,12 @@ export default function Predictor() {
   const [epw, setEpw] = useState("");
   const [age, setAge] = useState("");
 
-  // ===== UI-only (contextual) states =====
-  const [screenTime, setScreenTime] = useState("Low");
-  const [socialInteraction, setSocialInteraction] = useState("Moderate");
-  const [physicalActivity, setPhysicalActivity] = useState("Moderate");
-  const [routineType, setRoutineType] = useState("Regular");
+   // ===== UI-only (contextual) states =====
+  // const [screenTime, setScreenTime] = useState("Low");
+  // const [socialInteraction, setSocialInteraction] = useState("Moderate");
+  // const [physicalActivity, setPhysicalActivity] = useState("Moderate");
+  // const [routineType, setRoutineType] = useState("Regular");
+  
 
   // ===== App states =====
   const [result, setResult] = useState(null);
@@ -164,7 +165,7 @@ export default function Predictor() {
               />
             </div>
 
-            {/* ===== UI-ONLY CONTEXTUAL INPUTS ===== */}
+            {/* ===== UI-ONLY CONTEXTUAL INPUTS ===== 
         
 
             <div className="form-group">
@@ -215,7 +216,7 @@ export default function Predictor() {
             </div>
 
 
-        
+        */}
 
 
 
